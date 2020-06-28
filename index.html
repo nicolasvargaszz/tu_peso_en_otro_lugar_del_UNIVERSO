@@ -7,7 +7,7 @@
 body
 {
 font-family: Arial, Helvetica, sans-serif;
-background-color: rgba(238, 111, 8, 0.719);
+background-color: purple;
 color: rgb(29, 29, 29);
 }
 h1
@@ -22,6 +22,10 @@ background-color: lightblue;
 <body>
 <h1>Tu peso en otro planeta potencialmente habitable</h1>
 <p>En la Tierra, pesas distinto que en otro planeta, como Marte o Jupiter</p>
+<img src="https://www.caracteristicas.co/wp-content/uploads/2018/10/marte-e1540593088102.jpg"
+width="500" height="200">
+<img src="https://www.teknlife.com/wp-content/uploads/2016/07/jupiter.jpg"
+width="500" height="200">
 <script>
 var nombre = prompt("Como te llamas humano?");
 var peso = prompt("Cual es tu peso humano?");
@@ -35,19 +39,19 @@ if(planeta == 1)
 {
 peso_final = peso * g_marte / g_tierra;
 peso_final = parseInt(peso_final);
-document.write("Asique, tu peso en Marte, " + nombre + "es<strong>" + peso_final + "Kg</strong>");
+document.write("Asi que, tu peso en Marte, " + nombre  + "es<strong>" + peso_final + "Kg</strong>");
 }
 else if( planeta == 2)
 {
 peso_final = peso * g_jupiter / g_tierra;
 peso_final = parseInt(peso_final);
-document.write("Asique, tu peso en Jupiter",  + nombre +  "es <strong>" + peso_final + "Kg</strong>");
+document.write("Asi que, tu peso en jupiter, "  + nombre  +  " es<strong>" + peso_final + "Kg</strong>");
 }
 else
 {
 peso_final = 100000000
 peso_final = parseInt(peso_final);
-document.write("Asique, tu peso en Kripton, " + nombre +  "es <strong>" + peso_final + "Kg</strong>");
+document.write("Asi que, tu peso en Kripton, " + nombre  +  " es <strong>" + peso_final + "Kg</strong>");
 }
 </script>
 </body>
